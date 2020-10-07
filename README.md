@@ -37,20 +37,21 @@ Cette partie du TP est découpée en 4 grandes parties avec pour chacune des par
 ##### En quoi consiste l’approche Shotgun proteomics?
 
 ```
-
+Approche bottom-up (on prend un échantillon et on le digère) qui permet d'identifier des protéines dans un contexte biologique, par spectrométrie de masse.
+Rmq : top-down = prendre l'échantillon et injecter au sein du MS, sans digestion.
 ```
 
 ##### Quel est l’objectif de cette approche ?
 
 ```
-
+Identifier des différences entre des échantillons n'ayant pas la même origine (conditions différentes...) dans le but d'identifier des bio-marqueurs.
 ```
 
 #### Procédure
 -	Rechercher la base de données des protéines d’E. coli sur [UNIPROT](https://www.uniprot.org/)
 -	Télécharger toutes les séquences FASTA des protéines Swiss-prot. : format canonical, uncompressed (onglet download).
 -	Sauvegarder le fichier FASTA
--	Télécharger le fichier FASTA correspondant à la protéine suivante : « P00761 ».
+-	Télécharger le fichier FASTA correspondant à la protéine suivante : « P00761 ». (C'est la trypsine)
 -	Copier le fichier FASTA de la protéine P00761 à la suite du fichier FASTA du protéome bactérien.
 -	NB : le fichier FASTA s’ouvre avec un éditeur de texte. 
 
@@ -59,22 +60,22 @@ Cette partie du TP est découpée en 4 grandes parties avec pour chacune des par
 ##### L’identification des protéines/ peptides se réalise grâce à une base de données de protéines. Quelle comparaison va être effectuée?
 
 ```
-
+On compare les data experimentales (d'un point de vue peptide) à un protéome de référence (dans Uniprot).
 ```
 
 ##### Existe t’il d’autres types de bases de données pour réaliser l’identification des peptides trypsiques dans un spectre?
 
 ```
-
+Utiliser des bases de données spectrales (à la place des données fasta qui permettent de simuler des spectres MS/MS) d'organismes proches puis faire des homologies.
 ```
 
 ##### Est-ce qu’il est possible d’identifier des peptides sans base de données?
 ```
-
+Oui
 ```
 ##### Combien de protéines sont identifiées dans le protéome bactérien?
 ```
-
+Nombre de protéines dans le fichier fasta récupéré
 ```
 ##### Comment la liste des séquences des protéines est-elle établie ? Est-elle complète? 
 ```
@@ -86,11 +87,11 @@ Cette partie du TP est découpée en 4 grandes parties avec pour chacune des par
 ```
 ##### A quoi correspond la protéine P00761 et quelle est sa fonction ? 
 ```
-
+C'est la trypsine : elle digère.
 ```
 ##### Pourquoi doit-on rajouter cette protéine dans le fichier FASTA final du protéome bactérien?
 ```
-
+Car elle est présente dans notre échantillon, on s'attend donc à la retrouver dans nos résultats protéiques.
 ```
 
 ### Création de la « peak list »
@@ -174,11 +175,14 @@ Input files :
 - Charger le fichier .mgf 
 - Charge la base de données FASTA
 
+```
+Le peptide shaker permet de visualiser graphiquement les protéines identifiées.
+```
+
 Enregistrer votre projet sous le nom que vous souhaitez (l’extension du fichier sera .cpsx)
 
 
 ## II ) Analyse Bioinformatique
-
 
 
 ### Ressources

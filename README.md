@@ -305,8 +305,8 @@ Representer graphiquement les données d'abondance et construire la pvalue des f
 
 ##### 3. A partir de cette échantillon de ratio d'abondance,  estimez la moyenne <img src="https://render.githubusercontent.com/render/math?math=\mu"> et l'ecart-type <img src="https://render.githubusercontent.com/render/math?math=\sigma"> d'une loi normale.
 ```
-
-
+On suppose que l'estimation de la moyenne de la loi normale est la moyenne de l'échantillon.
+On suppose que la var de loi normale est : var(ech)*n/n-1.
 ```
 
 ##### 4. Superposez la densité de probabilité de cette loi sur l'histogramme. Attention, la densité de probabilité devra être mis à l'echelle de l'histogramme (cf ci-dessous)
@@ -325,8 +325,10 @@ ax.plot(x, norm.pdf(x, mu, sqrt(S_2))*scale) # compute theoritical PDF and draw 
 ##### 5. Quelles remarques peut-on faire à l'observation de l'histogramme et de loi théorique?
 
 ```
-
-
+Nos échantillons ne suivent pas vraiment une loi normale.
+Moyenne < 0 donc protéines moins abondantes dans l'expérience par rapport aux contrôles.
+Médiane > Moyenne donc on a plus de protéines au dessus de la moyenne qu'en dessous.
+Cela s'explique par la présence de la tétracycline qui perturbe l'action du ribosome donc perturbe la traduction = protéines trop petites, mal formées etc.
 ```
 
 #### Construction d'un volcano plot

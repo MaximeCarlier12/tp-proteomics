@@ -75,7 +75,7 @@ Oui
 ```
 ##### Combien de protéines sont identifiées dans le protéome bactérien?
 ```
-Nombre de protéines dans le fichier fasta récupéré
+Nombre de protéines dans le fichier fasta récupéré : 4391
 ```
 ##### Comment la liste des séquences des protéines est-elle établie ? Est-elle complète? 
 ```
@@ -138,9 +138,11 @@ NB : si vous avez des messages d’erreur qui s’affichent (missing precursor c
 #### Questions 
 ##### Pourquoi est-il important de bien choisir sa base de données?
 ```
+Les résultats peuvent varier selon la base de données (pas reproductible.
 ```
 ##### Est-ce que l’on retrouvera toujours les mêmes protéines au cours du temps ?
 ```
+Non car les bases de données sont mises à jour régulièrement.
 ```
 
 ##### Comment la taille de la base de données peut affecter le score de la protéine recherchée?

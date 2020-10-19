@@ -83,7 +83,8 @@ Nombre de protéines dans le fichier fasta récupéré : 4391
 ```
 ##### Quelle est la différence entre des séquences Swiss-prot et TremBL?
 ```
-
+Swiss-prot = bien annoté, à la main mais peu de protéines.
+TremBL = peu annoté, automatisé, mais beaucoup de protéines. 
 ```
 ##### A quoi correspond la protéine P00761 et quelle est sa fonction ? 
 ```
@@ -138,30 +139,35 @@ NB : si vous avez des messages d’erreur qui s’affichent (missing precursor c
 #### Questions 
 ##### Pourquoi est-il important de bien choisir sa base de données?
 ```
-Les résultats peuvent varier selon la base de données (pas reproductible.
+Les résultats peuvent varier selon la base de données (pas reproductible).
 ```
 ##### Est-ce que l’on retrouvera toujours les mêmes protéines au cours du temps ?
 ```
-Non car les bases de données sont mises à jour régulièrement.
+Non car les bases de données sont mises à jour régulièrement. Donc de nouvelles protéines vont être retrouvées.
 ```
 
 ##### Comment la taille de la base de données peut affecter le score de la protéine recherchée?
 ```
+Le score reflète la similarité entre les données théoriques et expérimentales. Plus la base est fournie, plus chaque peptide expérimental aura de chances de matcher avec un peptide théorique. Le score de la protéine s'en verra élevé.
 ```
 
 ##### Est-ce que les modifications ajoutées sont les seules modifications que l’on peut attendre dans une expérience de shotgun proteomics?
 ```
+Non
 ```
 
 ##### Vous avez choisi la trypsine comme enzyme et choisi « specific », qu’est-ce que cela signifie, et comment cela peut affecter le processing ? 
 ```
+Oui d'autres modifications sont possibles mais comme on ne s'attend pas à les retrouver. 
 ```
 
 ##### Qu’est-ce qu’un missed cleavage ? pourquoi 2 et pas 0 ?
 ```
+Il est possible que l'enzyme rate certains cleavage. 2 est choisi par défaut. 
 ```
 ##### Qu’est-ce que la tolérance en masse, comment la calcule-t-on ?
 ```
+C'est la différence de masse (ppm) que l'on tolère entre les données expérimentales et la masse du peptide théorique qui matche dans la banque.
 ```
 
 ### Visualisation des PSM, peptides - protéines
